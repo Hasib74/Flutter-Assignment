@@ -13,7 +13,7 @@ class SplashScreenController extends GetxController {
     Future.delayed(Duration(seconds: 5)).then((value) {
       HomeScreenController.to.getBlog();
 
-      Get.toNamed(AppRoutes.HOME);
+      Get.offAndToNamed(AppRoutes.HOME);
     });
   }
 }
